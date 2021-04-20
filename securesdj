@@ -1,19 +1,21 @@
 #! /bin/sh
-echo first pass. && \
-dd if=/dev/urandom of=/dev/sdj bs=1M status=progress && \
-echo first pass.. && \
-dd if=/dev/urandom of=/dev/sdj bs=1M status=progress && \
-echo first pass... && \
-dd if=/dev/urandom of=/dev/sdj bs=1M status=progress && \
-echo first pass.... && \
-dd if=/dev/urandom of=/dev/sdj bs=1M status=progress && \
-echo first pass..... && \
-dd if=/dev/urandom of=/dev/sdj bs=1M status=progress && \
-echo first pass...... && \
-dd if=/dev/urandom of=/dev/sdj bs=1M status=progress && \
-echo first pass....... && \
-dd if=/dev/urandom of=/dev/sdj bs=1M status=progress && \
+echo first pass.
+dd if=/dev/urandom of=/dev/sdj bs=1M status=progress
+echo first pass..
+dd if=/dev/urandom of=/dev/sdj bs=1M status=progress
+echo first pass...
+dd if=/dev/urandom of=/dev/sdj bs=1M status=progress
+echo first pass....
+dd if=/dev/urandom of=/dev/sdj bs=1M status=progress
+echo first pass.....
+dd if=/dev/urandom of=/dev/sdj bs=1M status=progress
+echo first pass......
+dd if=/dev/urandom of=/dev/sdj bs=1M status=progress
+echo first pass.......
+dd if=/dev/urandom of=/dev/sdj bs=1M status=progress
 echo completed first pass!
+echo Check for success on written data amount GB each first pass
+echo 
 exit
 
 
