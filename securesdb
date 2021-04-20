@@ -12,7 +12,7 @@ dd if=/dev/urandom of=/dev/sdb bs=1M status=progress && \
 echo first pass...... && \
 dd if=/dev/urandom of=/dev/sdb bs=1M status=progress && \
 echo first pass....... && \
-dd if=/dev/urandom of=/dev/sdb bs=1M status=progress
+dd if=/dev/urandom of=/dev/sdb bs=1M status=progress && \
 echo completed first pass!
 exit
 
