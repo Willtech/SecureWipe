@@ -1,0 +1,19 @@
+#! /bin/sh
+echo first pass. && \
+dd if=/dev/urandom of=/dev/sdk bs=1M status=progress && \
+echo first pass.. && \
+dd if=/dev/urandom of=/dev/sdk bs=1M status=progress && \
+echo first pass... && \
+dd if=/dev/urandom of=/dev/sdk bs=1M status=progress && \
+echo first pass.... && \
+dd if=/dev/urandom of=/dev/sdk bs=1M status=progress && \
+echo first pass..... && \
+dd if=/dev/urandom of=/dev/sdk bs=1M status=progress && \
+echo first pass...... && \
+dd if=/dev/urandom of=/dev/sdk bs=1M status=progress && \
+echo first pass....... && \
+dd if=/dev/urandom of=/dev/sdk bs=1M status=progress && \
+echo completed first pass!
+exit
+
+
