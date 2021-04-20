@@ -1,0 +1,21 @@
+#! /bin/sh
+echo /dev/sdl first pass.
+dd if=/dev/urandom of=/dev/sdl bs=1M status=progress
+echo /dev/sdl first pass..
+dd if=/dev/urandom of=/dev/sdl bs=1M status=progress
+echo /dev/sdl first pass...
+dd if=/dev/urandom of=/dev/sdl bs=1M status=progress
+echo /dev/sdl first pass....
+dd if=/dev/urandom of=/dev/sdl bs=1M status=progress
+echo /dev/sdl first pass.....
+dd if=/dev/urandom of=/dev/sdl bs=1M status=progress
+echo /dev/sdl first pass......
+dd if=/dev/urandom of=/dev/sdl bs=1M status=progress
+echo /dev/sdl first pass.......
+dd if=/dev/urandom of=/dev/sdl bs=1M status=progress
+echo completed /dev/sdl first pass!
+echo Check for success on written data amount /dev/sdl GB each first pass
+echo 
+exit
+
+
