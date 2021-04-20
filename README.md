@@ -12,4 +12,5 @@ A series of scripts for Secure Wipe for Linux
 Please create an issue to suggest improvements.  
 https://github.com/Willtech/SecureWipe/issues
 
-**NOTE: If you enter Sudo password data will be destroyed**
+**NOTE: If you enter Sudo password data will be destroyed**   
+*If there is a partition it writes in partition space.*
