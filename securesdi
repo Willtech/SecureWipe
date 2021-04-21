@@ -1,19 +1,36 @@
 #! /bin/sh
-echo /dev/sdi first pass.
+date_time=$(date +'%A %d %B %Y %H:%M:%S')
+day_year=$(date +'%j')
+day_quarter=$(date +'%q')
+day_week=$(date +'%u')
+week_year=$(date +'%W')
+Year=$(date +'%Y')
+time=$(date +'%H:%M:%S')
+echo $(date +'%A %d %B %Y')
+echo Day $day_year of Year $Year quarter $day_quarter 
+echo Day $day_week of week $week_year of Year $Year
+echo $time /dev/sdi first pass.
 dd if=/dev/urandom of=/dev/sdi bs=1M status=progress
-echo /dev/sdi first pass..
+time=$(date +'%H:%M:%S')
+echo $time /dev/sdi first pass..
 dd if=/dev/urandom of=/dev/sdi bs=1M status=progress
-echo /dev/sdi first pass...
+time=$(date +'%H:%M:%S')
+echo $time /dev/sdi first pass...
 dd if=/dev/urandom of=/dev/sdi bs=1M status=progress
-echo /dev/sdi first pass....
+time=$(date +'%H:%M:%S')
+echo $time /dev/sdi first pass....
 dd if=/dev/urandom of=/dev/sdi bs=1M status=progress
-echo /dev/sdi first pass.....
+time=$(date +'%H:%M:%S')
+echo $time /dev/sdi first pass.....
 dd if=/dev/urandom of=/dev/sdi bs=1M status=progress
-echo /dev/sdi first pass......
+time=$(date +'%H:%M:%S')
+echo $time /dev/sdi first pass......
 dd if=/dev/urandom of=/dev/sdi bs=1M status=progress
-echo /dev/sdi first pass.......
+time=$(date +'%H:%M:%S')
+echo $time /dev/sdi first pass.......
 dd if=/dev/urandom of=/dev/sdi bs=1M status=progress
-echo completed /dev/sdi first pass!
+time=$(date +'%H:%M:%S')
+echo $time completed /dev/sdi first pass!
 echo Check for success on written data amount /dev/sdi GB each first pass
 echo 
 exit
