@@ -1,5 +1,7 @@
 # SecureWipe
-A series of scripts for Secure Wipe for Linux
+ *Three times is not really better than two times.*
+
+A series of scripts for Secure Wipe for Linux 
 
 **NOTE: If you enter Sudo password data will be destroyed**
 
