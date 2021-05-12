@@ -1,17 +1,17 @@
 echo first pass.
-sudo dd if=/dev/urandom of=/dev/sdb bs=1M status=progress
+sudo dd if=/dev/urandom of=/dev/sdb1 bs=1M status=progress
 echo first pass..
-sudo dd if=/dev/urandom of=/dev/sdb bs=1M status=progress
+sudo dd if=/dev/urandom of=/dev/sdb1 bs=1M status=progress
 echo first pass...
-sudo dd if=/dev/urandom of=/dev/sdb bs=1M status=progress
+sudo dd if=/dev/urandom of=/dev/sdb1 bs=1M status=progress
 echo first pass....
-sudo dd if=/dev/urandom of=/dev/sdb bs=1M status=progress
+sudo dd if=/dev/urandom of=/dev/sdb1 bs=1M status=progress
 echo first pass.....
-sudo dd if=/dev/urandom of=/dev/sdb bs=1M status=progress
+sudo dd if=/dev/urandom of=/dev/sdb1 bs=1M status=progress
 echo first pass......
-sudo dd if=/dev/urandom of=/dev/sdb bs=1M status=progress
+sudo dd if=/dev/urandom of=/dev/sdb1 bs=1M status=progress
 echo first pass.......
-sudo dd if=/dev/urandom of=/dev/sdb bs=1M status=progress
+sudo dd if=/dev/urandom of=/dev/sdb1 bs=1M status=progress
 exit
 
 
