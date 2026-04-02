@@ -149,6 +149,28 @@ groot btrfs subvolume delete /.snap-nvme-backup
 
 ---
 
+# 7. The Fast Way
+
+```
+# Optional: create Btrfs snapshot
+groot btrfs subvolume snapshot -r / /.snap-nvme-backup
+
+# Clone NVMe → SATA using conv=sync,noerror
+groot dd if=/dev/nvme0n1 of=/dev/sda bs=1M conv=sync,noerror status=progress
+
+# Verify clone integrity
+groot dd if=/dev/nvme0n1 bs=1M status=none | sha256sum
+groot dd if=/dev/sda       bs=1M status=none | sha256sum
+
+# Restore (if needed)
+groot dd if=/dev/sda of=/dev/nvme0n1 bs=1M conv=sync,noerror status=progress
+
+# Clean up snapshot
+groot btrfs subvolume delete /.snap-nvme-backup
+```
+
+---
+
 ## 📎 Related Projects
 
 - **SecureWipe** — [https://github.com/Willtech/SecureWipe](https://github.com/Willtech/SecureWipe)  
