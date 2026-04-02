@@ -155,6 +155,14 @@ groot btrfs subvolume delete /.snap-nvme-backup
 # Optional: create Btrfs snapshot
 groot btrfs subvolume snapshot -r / /.snap-nvme-backup
 
+# (Optional) Mount snapshot for inspection
+# NOTE: Snapshots are NOT mounted automatically. Depends on filesystem use CoPilot.
+groot mkdir -p /mnt/snap
+groot mount -o ro,subvol=.snap-nvme-backup /dev/nvme0n1p1 /mnt/snap
+
+# Inspect snapshot contents under /mnt/snap
+# (e.g., ls /mnt/snap, check configs, verify state, etc.)
+
 # Clone NVMe → SATA using conv=sync,noerror
 groot dd if=/dev/nvme0n1 of=/dev/sda bs=1M conv=sync,noerror status=progress
 
