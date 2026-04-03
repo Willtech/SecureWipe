@@ -190,6 +190,15 @@ groot rsync -aHAXx --info=progress2 --delete \
     / /mnt/backup
 ```
 
+Then run.
+
+```
+groot rsync -aHAXx --info=progress2 --delete \
+    --numeric-ids --inplace --no-compress \
+    --exclude={"/dev/*","/proc/*","/sys/*","/run/*","/tmp/*","/mnt/*","/media/*","/lost+found"} \
+    /home/{user} /mnt/backup/home/
+```
+
 ---
 
 ## 📎 Related Projects
