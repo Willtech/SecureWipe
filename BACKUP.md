@@ -179,6 +179,19 @@ groot btrfs subvolume delete /.snap-nvme-backup
 
 ---
 
+# 8. The Canonical System Backup Command
+
+To backup / to your backup device /mnt/backup.
+
+```
+groot rsync -aHAXx --info=progress2 --delete \
+    --numeric-ids --inplace --no-compress \
+    --exclude={"/dev/*","/proc/*","/sys/*","/run/*","/tmp/*","/mnt/*","/media/*","/lost+found"} \
+    / /mnt/backup
+```
+
+---
+
 ## 📎 Related Projects
 
 - **SecureWipe** — [https://github.com/Willtech/SecureWipe](https://github.com/Willtech/SecureWipe)  
